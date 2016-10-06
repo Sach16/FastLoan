@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/ATTENDANCE_TITLE_BAR"
+        layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:id="@+id/CUSTOMER_LIST_FILTER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ATTENDANCE_TITLE_BAR"
+        android:background="@color/cardColor">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/corner_bg">
+
+            <Spinner
+                android:id="@+id/MEMBERS_LIST_SPIN"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/SELECT_MONTH"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/corner_bg">
+
+            <TextView
+                android:id="@+id/MONTH_TXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:hint="Select Month"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/date_color"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/GUID_TXT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:background="@color/cardColor"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/CUSTOMER_LIST_FILTER"
+        android:text="Tap on a user to view details"/>
+
+    <LinearLayout
+        android:id="@+id/LIST_HEADER"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/GUID_TXT"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.5"
+            android:background="@color/greyBlock"
+            android:textColor="@android:color/white"
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:text="Name"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/blockBg"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.25"
+            android:background="@color/greyBlock"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:text="Present"
+            android:textSize="14sp" />
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/blockBg"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.25"
+            android:background="@color/greyBlock"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:text="On Leave"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RECYC_ATTEN_HISTORY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:layout_below="@+id/LIST_HEADER"></android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

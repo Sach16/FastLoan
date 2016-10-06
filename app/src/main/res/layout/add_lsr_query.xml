@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/REL_LAY_GROUP"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cardColor">
+
+    <include
+        android:id="@+id/ADD_LSR_TITLE_BAR"
+        layout="@layout/titlebar" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ADD_LSR_TITLE_BAR"
+        android:layout_above="@+id/EDIT_SAVE_CANCEL_LAY">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="13dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/STATUS_PROPERTY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/STATUS_IMG_PROPERTY"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/circle_tick_color" />
+
+                    <ImageView
+                        android:id="@+id/STATUS_LINE_PROPERTY"
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center|top"
+                        android:background="@color/imgLineColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/PROPERTY_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/STATUS_PROPERTY"
+                    android:text="Project/Property" />
+
+                <Spinner
+                    android:id="@+id/PROPERTY_SPINNER"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/PROPERTY_TXT"
+                    android:layout_toRightOf="@+id/STATUS_PROPERTY" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/PROPERTY_SPINNER"
+                    android:layout_toRightOf="@+id/STATUS_PROPERTY"
+                    android:background="@color/imgLineColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/STATUS_PENDING"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/STATUS_PENDING_IMG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/circle_tick_color" />
+
+                    <ImageView
+                        android:id="@+id/STATUS_PENDING_LINE"
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center|top"
+                        android:background="@color/imgLineColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/PENDING_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/STATUS_PENDING"
+                    android:text="Pending with" />
+
+                <Spinner
+                    android:id="@+id/PENDING_SPINNER"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/PENDING_TXT"
+                    android:layout_toRightOf="@+id/STATUS_PENDING" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/PENDING_SPINNER"
+                    android:layout_toRightOf="@+id/STATUS_PENDING"
+                    android:background="@color/imgLineColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/STATUS_ADDLSR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/STATUS_ADDLSR_IMG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/circle_tick_color"  />
+
+                    <ImageView
+                        android:id="@+id/STATUS_ADDLSR_LINE"
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center|top"
+                        android:background="@color/imgLineColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ADDLSR_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/STATUS_ADDLSR"
+                    android:text="Add LSR Query" />
+
+                <LinearLayout
+                    android:id="@+id/ADDLSR_TXT_LAY"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ADDLSR_TXT"
+                    android:layout_toRightOf="@+id/STATUS_ADDLSR"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp">
+
+                    <EditText
+                        android:id="@+id/ADDLSR_MAIN_TXT"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:maxLines="3"
+                        android:maxLength="162"
+                        android:background="@android:color/transparent"
+                        android:hint="Type query here"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/QUERY_TXT_COUNT"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:text="(0/162)"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/ADDLSR_TXT_LAY"
+                    android:layout_toRightOf="@+id/STATUS_ADDLSR"
+                    android:background="@color/imgLineColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/STATUS_QUERY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/STATUS_QUERY_IMG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/circle_tick_color"  />
+
+                    <ImageView
+                        android:id="@+id/STATUS_QUERY_LINE"
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center|top"
+                        android:background="@color/imgLineColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/QUERY_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/STATUS_QUERY"
+                    android:text="Query raised on" />
+
+                <RelativeLayout
+                    android:id="@+id/QUERY_TXT_LAY"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/QUERY_TXT"
+                    android:layout_toRightOf="@+id/STATUS_QUERY"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:id="@+id/QUERY_MAIN_TXT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:hint="Select a Date"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:src="@drawable/date_color" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/QUERY_TXT_LAY"
+                    android:layout_toRightOf="@+id/STATUS_QUERY"
+                    android:background="@color/imgLineColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/STATUS_ASSIGNED"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/STATUS_ASSIGNED_IMG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/circle_tick_color" />
+
+                    <ImageView
+                        android:id="@+id/STATUS_ASSIGNED_LINE"
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center|top"
+                        android:background="@color/imgLineColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ASSIGNED_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/STATUS_ASSIGNED"
+                    android:text="Assigned to" />
+
+                <Spinner
+                    android:id="@+id/ASSIGNED_SPINNER"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/ASSIGNED_TXT"
+                    android:layout_toRightOf="@+id/STATUS_ASSIGNED" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/ASSIGNED_SPINNER"
+                    android:layout_toRightOf="@+id/STATUS_ASSIGNED"
+                    android:background="@color/imgLineColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/STATUS_STARTD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/STATUS_STARTD_IMG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/circle_tick_color" />
+
+                    <ImageView
+                        android:id="@+id/STATUS_STARTD_LINE"
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center|top"
+                        android:background="@color/imgLineColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/STARTD_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/STATUS_STARTD"
+                    android:text="Start date" />
+
+                <RelativeLayout
+                    android:id="@+id/STARTD_TXT_LAY"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/STARTD_TXT"
+                    android:layout_toRightOf="@+id/STATUS_STARTD"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:id="@+id/STARTD_MAIN_TXT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:hint="Select Start Date"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:src="@drawable/date_color" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/STARTD_TXT_LAY"
+                    android:layout_toRightOf="@+id/STATUS_STARTENDD"
+                    android:background="@color/imgLineColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/STATUS_STARTT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/STATUS_STARTT_IMG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/circle_tick_color" />
+
+                    <ImageView
+                        android:id="@+id/STATUS_STARTT_LINE"
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center|top"
+                        android:background="@color/imgLineColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/STARTT_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/STATUS_STARTT"
+                    android:text="Start time" />
+
+                <RelativeLayout
+                    android:id="@+id/STARTT_TXT_LAY"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/STARTT_TXT"
+                    android:layout_toRightOf="@+id/STATUS_STARTT"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:id="@+id/STARTT_MAIN_TXT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:textColorHint="@android:color/black"
+                        android:textColor="@android:color/black"
+                        android:hint="Select Start Time"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:src="@drawable/clock" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/STARTT_TXT_LAY"
+                    android:layout_toRightOf="@+id/STATUS_STARTT"
+                    android:background="@color/imgLineColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/STATUS_ENDD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/STATUS_ENDD_IMG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/circle_tick_color" />
+
+                    <ImageView
+                        android:id="@+id/STATUS_ENDD_LINE"
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center|top"
+                        android:background="@color/imgLineColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ENDD_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/STATUS_ENDD"
+                    android:text="End date" />
+
+                <RelativeLayout
+                    android:id="@+id/ENDD_TXT_LAY"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ENDD_TXT"
+                    android:layout_toRightOf="@+id/STATUS_ENDD"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:id="@+id/ENDD_MAIN_TXT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:hint="Select End Date"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:src="@drawable/date_color" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/ENDD_TXT_LAY"
+                    android:layout_toRightOf="@+id/STATUS_STARTENDD"
+                    android:background="@color/imgLineColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/STATUS_ENDT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/STATUS_ENDT_IMG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/circle_tick_color" />
+
+                    <ImageView
+                        android:id="@+id/STATUS_ENDT_LINE"
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center|top"
+                        android:background="@color/imgLineColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ENDT_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/STATUS_ENDT"
+                    android:text="End time" />
+
+                <RelativeLayout
+                    android:id="@+id/ENDT_TXT_LAY"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ENDT_TXT"
+                    android:layout_toRightOf="@+id/STATUS_ENDT"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:id="@+id/ENDT_MAIN_TXT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:textColorHint="@android:color/black"
+                        android:textColor="@android:color/black"
+                        android:hint="Select End Time"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:src="@drawable/clock" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/ENDT_TXT_LAY"
+                    android:layout_toRightOf="@+id/STATUS_STARTENDT"
+                    android:background="@color/imgLineColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/STATUS_STATUS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/STATUS_STATUS_IMG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/circle_tick_color" />
+
+                    <!--<ImageView
+                        android:id="@+id/STATUS_STATUS_LINE"
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center|top"
+                        android:background="@color/imgLineColor" />-->
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/STATUS_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/STATUS_STATUS"
+                    android:text="Lsr Status" />
+
+                <Spinner
+                    android:id="@+id/STATUS_SPINNER"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/STATUS_TXT"
+                    android:layout_toRightOf="@+id/STATUS_STATUS" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/STATUS_SPINNER"
+                    android:layout_toRightOf="@+id/STATUS_STATUS"
+                    android:background="@color/imgLineColor" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/EDIT_SAVE_CANCEL_LAY"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:elevation="2dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/SUBMIT_BTN_TXT"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/buttonBg"
+            android:gravity="center"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/CANCEL_BTN_TXT"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/imgLineColor"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ITEM_CARDVIEW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="6dp"
+        card_view:cardElevation="4dp"
+        card_view:contentPadding="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/TASK_FIRST_VIEW"
+                layout="@layout/todays_task_list_top_cell" />
+
+            <View
+                android:id="@+id/VIEW_DIV"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/TASK_FIRST_VIEW"
+                android:background="@color/imgLineColor" />
+
+            <include
+                android:id="@+id/TASK_SEC_VIEW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/todays_task_list_middle_cell"
+                android:layout_below="@+id/VIEW_DIV"/>
+
+            <include
+                android:id="@+id/TASK_THIRD_VIEW"
+                layout="@layout/todays_task_list_bottom_cell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/TASK_SEC_VIEW" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

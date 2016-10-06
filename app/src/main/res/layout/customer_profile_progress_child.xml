@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/CHILD_LAY"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="13dp"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/DOT_PROGRESS_BAR"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            layout="@layout/dot_progress" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="Loan Type"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/LOAN_TYPE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.35"
+                android:gravity="right"
+                android:hint="-"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/LOAN_TYPE"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="Loan Amount Applied"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/LOAN_AMT_APPLIED"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="-"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/LOAN_AMT_APPLIED"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="Applied On"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/APPLIED_ON"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="-"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/APPLIED_ON"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="Bank Applied"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/BANK_APPLIED"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="-"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/BANK_APPLIED"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="DSA Name"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/DSA_NAME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="-"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/DSA_NAME"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="DSA Phone"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/DSA_PHONE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="-"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/DSA_PHONE"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/DSA_EMAIL_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:hint="DSA Email Id"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/DSA_EMAIL"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="-"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/DSA_EMAIL_LAY"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="DSA Contact Name"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/DSA_CONTACT_NAME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="-"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/DSA_CONTACT_NAME"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="DSA Contact Phone"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/DSA_CONTACT_PHONE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="-"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/DSA_CONTACT_PHONE"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="Loan Status"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/LOAN_STATUS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.35"
+                android:gravity="right"
+                android:hint="-"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/LOAN_STATUS"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="App Id"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/APP_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="-"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/APP_ID"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="Total TAT"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/TOTAL_TAT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="-"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/TOTAL_TAT"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/LOAN_PROGRESS_LIST"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp" />
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="Lead"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/TAT_LEAD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="Bank Log In"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/TAT_LEAD"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>-->
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="Bank Log In"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/TAT_BANK_LOG_IN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="Sanction"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/TAT_BANK_LOG_IN"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>-->
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="Sanction"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/TAT_SANCTION"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="Disbursal"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/TAT_SANCTION"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="Eligible Loan Amount"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ELIGIBLE_LOAN_AMT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.35"
+                android:gravity="right"
+                android:hint="-"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/ELIGIBLE_LOAN_AMT"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="Approved Loan Amount"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/APPROVED_LOAN_AMT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.35"
+                android:gravity="right"
+                android:hint="-"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/APPROVED_LOAN_AMT"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="Interest Rate"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/INTEREST_RATE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.35"
+                android:gravity="right"
+                android:hint="-"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/INTEREST_RATE"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="Approved Date"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/APPROVED_DATE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="-"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/APPROVED_DATE"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="EMI Amount"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/EMI_AMT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.35"
+                android:gravity="right"
+                android:hint="-"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/EMI_AMT"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="EMI Start Date"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/EMI_START_DATE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:hint="-"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/EMI_START_DATE"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/DOCUMENTS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Documents"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/DOCUMENT_NAMES"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:hint="Add new document"
+                    android:textStyle="bold"
+                    android:textColorHint="@android:color/black"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/EDIT_CUST_LOAN_IMG"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/edit_1" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

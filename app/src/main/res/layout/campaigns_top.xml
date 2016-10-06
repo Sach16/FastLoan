@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cardColor">
+
+    <LinearLayout
+        android:id="@+id/CAMPAIGN_DATE_LAY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/FROM_DATE_LAY"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/corner_bg">
+
+            <TextView
+                android:id="@+id/FROM_DATE_TXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:textSize="14sp"
+                android:hint="From"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/date_color"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/TO_DATE_LAY"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/corner_bg">
+
+            <TextView
+                android:id="@+id/TO_DATE_TXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:textSize="14sp"
+                android:hint="To"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/date_color"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/SPIN_FILT_BUTTON_TXT"
+        android:layout_below="@+id/CAMPAIGN_DATE_LAY"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:text="Get Campaigns"
+        android:layout_margin="15dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/RESULTS_LAY"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/SPIN_FILT_BUTTON_TXT"
+        android:background="@color/sliderbg">
+
+        <TextView
+            android:id="@+id/RESULTS_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Results"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/RESULTS_COUNT_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/RESULTS_TXT"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="(0 projects)"
+            android:textColor="@color/corner_bg"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/SCREEN_IMAGE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/campaigns_2" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/sliderbg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="Personal Details"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/PAYMENT_TYPE"
+        android:background="@color/corner_bg" />
+
+    <LinearLayout
+        android:id="@+id/PRODUCT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/DSA_WISE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="DSA Wise : "
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/DSA_WISE_TEXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/DSA_WISE"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/CITY_WISE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="City Wise : "
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/CITY_WISE_TXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/CITY_WISE"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/ALL_INDIA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:text="All India : "
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/ALL_INDIA_TXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ALL_INDIA"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/PRODUCT"
+        android:background="@color/corner_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="Date of Birth"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/DOB_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/DOB_TXT"
+            android:background="@color/corner_bg" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="City"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/CITY_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/CITY_TXT"
+            android:background="@color/corner_bg" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/GENDER_TXT_LAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.35"
+            android:gravity="left"
+            android:text="Gender"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/GENDER_TEXT_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.35"
+            android:gravity="right"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/GENDER_TXT_LAY"
+            android:background="@color/corner_bg" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/ADD_TXT_LAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Address"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ADD_TXT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/ADD_TXT_LAY"
+            android:background="@color/corner_bg" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/ADD_PROOF_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="Address Proof"
+            android:textSize="16sp" />
+
+        <!--TODO remove visibility gone-->
+
+        <TextView
+            android:id="@+id/ADD_PROOF_PROOF_TXT"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ADD_BTN"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="DL"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/ADD_BTN"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:text="View"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/ADD_BTN"
+            android:background="@color/corner_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/ID_PROOF_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="ID Proof"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/ID_PROOF_PROOF_TXT"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ID_BTN"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="Pan Card"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/ID_BTN"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:text="View"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/ID_BTN"
+            android:background="@color/corner_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="Date of Joining"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/DOJ_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/DOJ_TXT"
+            android:background="@color/corner_bg" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="Experience as on DOJ"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/DOJ_YRS_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/DOJ_YRS_TXT"
+            android:background="@color/corner_bg" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="Joined As"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/JOINEDAS_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/JOINEDAS_TXT"
+            android:background="@color/corner_bg" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/PRODUCTS_HANDLED_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="Products Handled"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/PRODUCTS_HANDLED_TXT_BTN"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:text="View"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/PRODUCTS_HANDLED_TXT_BTN"
+            android:background="@color/corner_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="Experience with Banks"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/EXPERIENCE_WITH_BANKS_BTN"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:text="View"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/EXPERIENCE_WITH_BANKS_BTN"
+            android:background="@color/corner_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/REPORTS_TO_NAME_NO_REL_LAY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="Reports To"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/REPORTS_TO_NAME_NO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/REPORTS_TO_NAME_NO"
+            android:background="@color/corner_bg" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:background="@color/calendarBlock"
+            android:drawableTop="@drawable/locate_bg"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Locate"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/blockBg" />
+
+
+        <TextView
+            android:id="@+id/PHONE_CALL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:background="@color/calendarBlock"
+            android:drawableTop="@drawable/call_bg"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Call"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/blockBg" />
+
+        <TextView
+            android:id="@+id/PHONE_VIDEO_CALL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:background="@color/calendarBlock"
+            android:drawableTop="@drawable/video_call_bg"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Video Call"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/blockBg" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:background="@color/calendarBlock"
+            android:drawableTop="@drawable/mail_bg"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Mail"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

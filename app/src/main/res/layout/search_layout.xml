@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardColor">
+
+    <include
+        android:id="@+id/SEARCH_TITLE_BAR"
+        layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:id="@+id/SEARCH_LAYOUT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SEARCH_TITLE_BAR"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/SEARCH_TITLE_BAR"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/SPIN_SEARCH"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:background="@drawable/spinner_left_bg"></Spinner>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/arrow_white"
+                android:background="@color/greyTextColor"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8">
+
+                <EditText
+                    android:id="@+id/SEARCH_EDITTXT"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:hint="Enter Search Value"
+                    android:maxLines="1"
+                    android:layout_weight="0.8"
+                    android:singleLine="true"
+                    android:paddingLeft="5dp" />
+
+                <ImageView
+                    android:id="@+id/CLOSE_TXT_IMG"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:layout_alignParentRight="true"
+                    android:padding="10dp"
+                    android:background="@android:color/white"
+                    android:src="@drawable/close_2" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/SEARCH_GO_IMG"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:background="@drawable/img_right_bg"
+                android:padding="10dp"
+                android:src="@drawable/search" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/BUILDER_LAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/BUILDER_TXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/STATUS_BUILDER"
+                android:text="Builder Name" />
+
+            <Spinner
+                android:id="@+id/BUILDER_SPINNER"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/BUILDER_TXT"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/STATUS_BUILDER" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/BUILDER_SPINNER"
+                android:layout_toRightOf="@+id/STATUS_BUILDER"
+                android:background="@color/imgLineColor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/PROJECT_LAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/PROJECT_TXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/STATUS_PROJECT"
+                android:text="Project Name" />
+
+            <Spinner
+                android:id="@+id/PROJECT_SPINNER"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/PROJECT_TXT"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/STATUS_PROJECT" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/TAB_LAYOUT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SEARCH_LAYOUT"
+        android:background="@color/cardColor"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:textSize="18sp"
+        app:tabIndicatorColor="@color/greyText"
+        app:tabIndicatorHeight="2dp"
+        app:tabSelectedTextColor="@color/greyText"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabTextColor="@color/greyText" />
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/SWIPE_REFRESH"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/TAB_LAYOUT"
+        android:background="#222222">-->
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/PAGER"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/TAB_LAYOUT"
+            android:background="@android:color/white" />
+
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+</RelativeLayout>

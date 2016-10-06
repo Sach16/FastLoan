@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RECYC_APPROVAL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/ADD_NEW_APPROVALS_LAY"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"></android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/ADD_NEW_APPROVALS_LAY"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/buttonBg">
+
+        <TextView
+            android:id="@+id/ADD_NEW_APPROVALS"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/plus_bg"
+            android:background="@color/buttonBg"
+            android:gravity="center"
+            android:text="Add New Project"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/NO_DATA_AVAILABLE"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_data_available"
+        android:visibility="gone" />
+
+</RelativeLayout>

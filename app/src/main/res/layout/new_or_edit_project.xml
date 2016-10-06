@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/SCROLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ADD_OR_EDIT_LAY">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--view layout-->
+
+            <include
+                android:id="@+id/PROJECT_PROPERTY_VIEW"
+                layout="@layout/project_property_view"
+                android:visibility="visible"/>
+
+            <!--edit layout-->
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/ADD_OR_EDIT_LAY"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/ADD_NEW_APPROVALS"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/buttonBg"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="Edit Project/Property"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/EDIT_SAVE_CANCEL_LAY"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/SUBMIT_TXT"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Submit"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:background="@color/buttonBg"/>
+            <TextView
+                android:id="@+id/CANCEL_TXT"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:background="@color/imgLineColor"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

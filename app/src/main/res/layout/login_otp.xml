@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/REL_LAY"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start_bg">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:id="@+id/ICON"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/close"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/ICON"
+            android:textColor="@android:color/white"
+            android:text="WhatsLoan"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/OTP_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/STATUS_PENDING"
+            android:textColor="@android:color/white"
+            android:text="@string/enter_phone_no" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/OTP_TXT"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/PHONE_NO_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_below="@+id/OTP_TXT"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/PHONE_NUMBER"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/mobile"
+                    android:drawablePadding="10dp"
+                    android:gravity="center|left"
+                    android:inputType="phone"
+                    android:imeOptions="actionDone"
+                    android:hint="Phone Number"
+                    android:digits="@string/numeric"
+                    android:maxLength="10"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:background="@android:color/transparent"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/OTP_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_below="@+id/OTP_TXT"
+                android:layout_margin="20dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/OTP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/lock"
+                    android:drawablePadding="10dp"
+                    android:gravity="center|left"
+                    android:hint="OTP"
+                    android:inputType="numberPassword"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:background="@android:color/transparent"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/SEND_OR_SIGN_IN"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/buttonBg"
+            android:gravity="center"
+            android:text="@string/get_otp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">DSA</string>
+    <string name="internet_connectivity_prompt">Internet connectivity is required for this example.</string>
+    <string name="calendar_range_left_arrow_description">Tap to move to previous month</string>
+    <string name="calendar_range_right_arrow_description">Tap to move to next month</string>
+    <string name="alert_gps_not_enabled">GPS is not enabled. Do you want to go to settings menu?</string>
+    <string name="no_data_available">No Data Available</string>
+    <string name="from_date_and_time">From Date &amp; Time</string>
+    <string name="to_date_and_time">To Date &amp; Time</string>
+    <string name="enter_phone_no">Enter Phone No &amp; Get OTP</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="sign_in">Sign In</string>
+    <string name="phone_no_otp_not_reg">Phone No. &amp; OTP does not match</string>
+    <string name="not_logged_in">Not Logged-In</string>
+    <string name="yet_to_start">Yet To Start</string>
+
+    <!--<string name="alphaNumeric">a bcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_,.</string>-->
+    <!--<string name="alphabet">a bcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>-->
+    <!--<string name="emailAlphaNumeric">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_.@</string>-->
+    <string name="panAlphaNumeric">ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</string>
+    <string name="numeric">0123456789</string>
+
+    <item type="id" name="EXPERIENCE_DOC"/>
+    <item type="id" name="PRODUCT_DOC"/>
+    <item type="id" name="ID_DOC"/>
+    <item type="id" name="ADDRESS_DOC"/>
+
+    <item type="id" name="PHONE_NO"/>
+    <item type="id" name="PHONE_NO_CUST"/>
+    <item type="id" name="PHONE_NO_CUST_TASK"/>
+</resources>

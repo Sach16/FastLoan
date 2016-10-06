@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/APPROVED_PROJECT_CELL_VIEW"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/APPROV_PROJ_NAME"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="Candy Villa"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/DETAILS_LAY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/APPROV_PROJ_NAME"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".20"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/CUST_IMG"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight=".30"
+                android:scaleType="fitXY"
+                android:src="@color/colorPrimary" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".60"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/COMPANY_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ADDLSR_TXT"
+                android:layout_toRightOf="@+id/STATUS_ADDLSR">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:hint="Company" />
+
+                <TextView
+                    android:id="@+id/TYPE_OF_LOAN"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Full Name"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LOAN_STATUS_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ADDLSR_TXT"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/STATUS_ADDLSR">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:hint="Status" />
+
+                <TextView
+                    android:id="@+id/LOAN_STATUS"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Status"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LOAN_UNIT_DETAILS_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ADDLSR_TXT"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/STATUS_ADDLSR">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:hint="Unit Details" />
+
+                <TextView
+                    android:id="@+id/LOAN_UNIT_DETAILS"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="0"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/POSSESSION_DATE_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ADDLSR_TXT"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/STATUS_ADDLSR">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:hint="Possession Date" />
+
+                <TextView
+                    android:id="@+id/POSSESSION_DATE"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="dd-MMM-YYYY"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/DETAILS_LAY"
+        android:layout_margin="10dp"
+        android:background="@color/imgLineColor" />
+
+</RelativeLayout>

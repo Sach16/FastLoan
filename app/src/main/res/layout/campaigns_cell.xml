@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/CAMPAIGN_TOP_CELL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/CAMPAIGN_IMG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/campaigns_color" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/CAMPAIGN_TEXT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ellipsize="end"
+                android:gravity="left|bottom"
+                android:singleLine="true"
+                android:text="Campaign Name"
+                android:textColor="@android:color/black"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/CAMPAIGN_DESC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:hint="Campaign description" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/CAMPAIGN_BOTTOM_CELL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/CAMPAIGN_TOP_CELL"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/TYPE_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Type"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/CAMPAIGN_TYPE"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Campaign Type"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/TYPE_LAY"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/VENUE_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Venue"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/VENUE_TXT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Address"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/VENUE_LAY"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/FROM_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/from_date_and_time"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/FROM_TXT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="yyyy-MM-dd HH:mm:ss"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/FROM_LAY"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/TO_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/to_date_and_time"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/TO_TXT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="yyyy-MM-dd HH:mm:ss"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/TO_LAY"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/PROMO_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Promotional Materials"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/PROMO_TXT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Promotional Materials details"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/PROMO_LAY"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/ORGANIZED_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Organized by"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/ORGANIZED_TXT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Organized by details"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/ORGANIZED_LAY"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/TEAM_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Team"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/TEAM_MEMBERS"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="mem1, mem2, mem3"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/TEAM_LAY"
+                android:background="@color/corner_bg" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

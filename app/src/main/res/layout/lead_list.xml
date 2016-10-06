@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/REL_LAY_GROUP"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/LEAD_LIST_TITLE_BAR"
+        layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:id="@+id/LEAD_LIST_FILTER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LEAD_LIST_TITLE_BAR"
+        android:background="@color/cardColor"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/LOGIN_DATE_REL_LAY"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/corner_bg"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/LEAD_LOGIN_DATE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:text="Lead Date" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/date_color" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/corner_bg"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Spinner
+                android:id="@+id/LEAD_FROM_SPIN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RECYC_LEAD_LIST"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/LEAD_LIST_FILTER"
+        android:layout_above="@+id/ADD_LAY"
+        android:scrollbars="vertical"
+        android:background="@color/cardColor"/>
+
+    <TextView
+        android:id="@+id/NO_DATA_AVAILABLE"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_data_available"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/ADD_LAY"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/buttonBg">
+
+        <TextView
+            android:id="@+id/ADD_NEW_LEAD"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:drawablePadding="5dp"
+            android:background="@color/buttonBg"
+            android:drawableLeft="@drawable/plus_bg"
+            android:gravity="center"
+            android:text="Add Lead"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

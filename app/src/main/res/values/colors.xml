@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#02A8F4</color>
+    <color name="colorPrimaryDark">#017BB2</color>
+    <color name="cardColor">#EDEDED</color>
+    <!--color accent is used for gen texts and edittext cursor-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="colorAccent">#02A8F4</color>
+    <color name="corner_bg">#DDDDDD</color>
+    <color name="startBg">#304558</color>
+    <color name="blockBg">#333333</color>
+    <color name="buttonBg">#05CFB5</color>
+    <color name="imgLineColor">#CCCCCC</color>
+    <color name="lineSeperator">#E7E7E7</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="gold">#FFD700</color>
+    <color name="sliderbg">#7D8286</color>
+    <color name="sliderBtnColor">#596B79</color>
+    <color name="greyTextColor">#9A9A9A</color>
+    <color name="barChartBg">#E5E5E5</color>
+    <color name="transparent">#00000000</color>
+    <color name="dateDissabled">#ADB2B8</color>
+    <color name="calendarTitle">#2E4152</color>
+    <color name="blockBlue">#228AC1</color>
+    <color name="greyText">#74797C</color>
+    <color name="greyBlock">#7E8387</color>
+    <color name="dotsBg">#14546D</color>
+    <color name="calendarBlock">#14546D</color>
+</resources>

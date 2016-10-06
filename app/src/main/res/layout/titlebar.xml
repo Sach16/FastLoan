@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/colorPrimary"
+    android:elevation="8dp">
+
+    <RelativeLayout
+        android:id="@+id/TITLE_TXT_LAY"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true">
+
+        <RelativeLayout
+            android:id="@+id/TITLE_HAMB_BACK_LAY"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/TITLE_HAMBURGER"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/menu" />
+
+            <ImageView
+                android:id="@+id/TITLE_BACK"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/back_arrow"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/TITLE_LOGO"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/TITLE_HAMB_BACK_LAY"
+            android:visibility="gone"
+            android:src="@drawable/close"/>
+
+        <TextView
+            android:id="@+id/TITLE_MAIN_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/TITLE_LOGO"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:maxWidth="180dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="Full Name"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/TITLE_SEARCH_LAY"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/TITLE_NOTIFICATION"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_margin="7dp"
+            android:src="@drawable/bell"/>
+
+        <ImageView
+            android:id="@+id/TITLE_CALENDAR"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_margin="7dp"
+            android:src="@drawable/calendar"/>
+
+        <ImageView
+            android:id="@+id/TITLE_SEARCH"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_margin="7dp"
+            android:src="@drawable/search"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/REL_LAY_GROUP"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardColor">
+
+    <include android:id="@+id/VIEW_PROFILE_APP_TITLE_BAR"
+        layout="@layout/titlebar"/>
+
+    <ScrollView
+        android:id="@+id/SCROLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/VIEW_PROFILE_APP_TITLE_BAR"
+        android:layout_above="@+id/VIEW_PRO_DASH_TEAM">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/VIEW_PROFILE_TOP"
+                layout="@layout/view_profile_top" />
+
+            <include
+                android:id="@+id/VIEW_PROFILE_BOTTOM"
+                layout="@layout/view_profile_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/VIEW_PROFILE_TOP" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/VIEW_PRO_DASH_TEAM"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/VIEW_DASHBOARD"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/buttonBg"
+            android:gravity="center"
+            android:text="View Dashboard"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

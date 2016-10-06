@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/REL_LAY_GROUP"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg">
+
+    <include android:id="@+id/CUST_EDIT_TITLE_BAR"
+        layout="@layout/titlebar"/>
+
+    <RelativeLayout
+        android:id="@+id/CUST_SPIN_LAY"
+        android:layout_below="@+id/CUST_EDIT_TITLE_BAR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/PROPERTY_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Status" />
+
+        <LinearLayout
+            android:id="@+id/STAUS_SPINNER_LAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PROPERTY_TXT"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/STAUS_SPINNER"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.80"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/SUBMIT_STS_TXT"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.20"
+                android:background="@color/buttonBg"
+                android:gravity="center"
+                android:text="Update"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@+id/STAUS_SPINNER_LAY"
+            android:background="@color/imgLineColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/CUST_LIST_LAY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/CUST_SPIN_LAY">
+
+        <TextView
+            android:id="@+id/GUID_TXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardColor"
+            android:gravity="left"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="DSA Name/ Customer Name :"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/DOCUMENT_LIST"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/FILE_PHOTO_LAY"
+            android:layout_below="@+id/GUID_TXT" />
+
+        <RelativeLayout
+            android:id="@+id/DOC_VIEW_WITH_TXT"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_above="@+id/FILE_PHOTO_LAY"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/LOAN_IMG"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/file"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/FILE_URL_TXT"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/LOAN_IMG"
+                android:gravity="center"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/FILE_DESC_EDIT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/LOAN_IMG"
+                android:gravity="left"
+                android:hint="Enter File Description"
+                android:paddingLeft="20dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/FILE_PHOTO_LAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/SUBMIT_CANCEL_LAY"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/UPLOAD_FILE_TXT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@color/calendarBlock"
+                android:drawableTop="@drawable/update_bg"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="Select a File"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/blockBg" />
+
+
+            <TextView
+                android:id="@+id/TAKE_PHOTO_TXT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@color/calendarBlock"
+                android:drawableTop="@drawable/photo_bg"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="Take a Photo"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/blockBg" />
+
+            <TextView
+                android:id="@+id/UPLOAD_PHOTO_TXT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@color/calendarBlock"
+                android:drawableTop="@drawable/upload_bg"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="Select a Photo"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/FILE_NAME_REL_LAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/FILE_NAME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="File Name" />
+
+            <RelativeLayout
+                android:id="@+id/FILE_NAME_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FILE_NAME"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/FILE_NAME_TXT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_below="@+id/FILE_NAME_LAY"
+                android:background="@color/imgLineColor" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/SUBMIT_CANCEL_LAY"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:elevation="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/SUBMIT_BTN_TXT"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/buttonBg"
+                android:gravity="center"
+                android:text="Submit"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/CANCEL_BTN_TXT"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/imgLineColor"
+                android:gravity="center"
+                android:text="Cancel"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

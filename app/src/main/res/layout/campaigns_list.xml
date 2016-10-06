@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include
+        android:id="@+id/CAMPAIGNS_TITLE_BAR"
+        layout="@layout/titlebar"/>
+
+    <RelativeLayout
+        android:id="@+id/SCROLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CAMPAIGNS_TITLE_BAR">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/CAMPAIGNS_TOP"
+                layout="@layout/campaigns_top" />
+
+            <include
+                android:id="@+id/CAMPAIGNS_BOTTOM"
+                layout="@layout/approving_banks_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CAMPAIGNS_TOP" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/APPROVED_PROJECT_CELL_VIEW"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/DETAILS_LAY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/APPROV_PROJ_NAME"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".20"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/CUST_IMG"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight=".30"
+                android:scaleType="fitXY"
+                android:src="@color/colorPrimary" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".60"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/APPROV_BUILDER_NAME"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:layout_margin="5dp"
+                android:singleLine="true"
+                android:text="Builders Name"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/COMPANY_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/ADDLSR_TXT"
+                android:layout_toRightOf="@+id/STATUS_ADDLSR">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:hint="Project Name" />
+
+                <TextView
+                    android:id="@+id/PROJECT_NAME"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:hint="-"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LOAN_STATUS_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ADDLSR_TXT"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/STATUS_ADDLSR">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:hint="Location" />
+
+                <TextView
+                    android:id="@+id/APPROV_LOCATION"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:hint="-"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LOAN_UNIT_DETAILS_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ADDLSR_TXT"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/STATUS_ADDLSR">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:hint="city" />
+
+                <TextView
+                    android:id="@+id/APPROV_CITY"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:hint="-"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/POSSESSION_DATE_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ADDLSR_TXT"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/STATUS_ADDLSR">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:hint="Submited To" />
+
+                <TextView
+                    android:id="@+id/SUBMITTED_BANK"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:hint="-"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ADDLSR_TXT"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/STATUS_ADDLSR">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:hint="Submited On" />
+
+                <TextView
+                    android:id="@+id/SUBMITTED_BANK_DATE"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:hint="-"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ADDLSR_TXT"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/STATUS_ADDLSR">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:hint="Submited By" />
+
+                <TextView
+                    android:id="@+id/SUBMITTED_BANK_BY"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:hint="-"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/DETAILS_LAY"
+        android:background="@color/imgLineColor"/>
+
+</RelativeLayout>

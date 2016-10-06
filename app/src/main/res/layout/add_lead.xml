@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RELEV_LAY"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardColor">
+
+    <include android:id="@+id/NEW_PROJECT_APP_TITLE_BAR"
+        layout="@layout/titlebar"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NEW_PROJECT_APP_TITLE_BAR"
+        android:layout_above="@+id/SUBMIT_CANCEL_LAY">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="13dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/STATUS_LEAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/STATUS_LEAD_IMG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/circle_tick_color" />
+
+                    <ImageView
+                        android:id="@+id/STATUS_LEAD_LINE"
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center|top"
+                        android:background="@color/imgLineColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/LEAD_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/STATUS_LEAD"
+                    android:text="Name" />
+
+                <EditText
+                    android:id="@+id/LEAD_DESCRIPTION_EDIT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/LEAD_TXT"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/STATUS_LEAD"
+                    android:background="@android:color/transparent"
+                    android:inputType="text|textNoSuggestions"
+                    android:hint="Enter Lead Name"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/LEAD_DESCRIPTION_EDIT"
+                    android:layout_toRightOf="@+id/STATUS_LEAD"
+                    android:background="@color/imgLineColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/STATUS_PHONE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/STATUS_PHONE_IMG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/circle_tick_color" />
+
+                    <ImageView
+                        android:id="@+id/STATUS_PHONE_LINE"
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center|top"
+                        android:background="@color/imgLineColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/PHONE_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/STATUS_PHONE"
+                    android:text="Phone Number" />
+
+                <EditText
+                    android:id="@+id/PHONE_DESCRIPTION_EDIT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/PHONE_TXT"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/STATUS_PHONE"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter Phone No."
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:maxLength="10"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/PHONE_DESCRIPTION_EDIT"
+                    android:layout_toRightOf="@+id/STATUS_PHONE"
+                    android:background="@color/imgLineColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/STATUS_EMAIL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/STATUS_EMAIL_IMG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/circle_tick_color" />
+
+                    <ImageView
+                        android:id="@+id/STATUS_EMAIL_LINE"
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center|top"
+                        android:background="@color/imgLineColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/EMAIL_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/STATUS_EMAIL"
+                    android:text="Mail ID" />
+
+                <EditText
+                    android:id="@+id/EMAIL_DESCRIPTION_EDIT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/EMAIL_TXT"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/STATUS_EMAIL"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter Mail ID"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/EMAIL_DESCRIPTION_EDIT"
+                    android:layout_toRightOf="@+id/STATUS_EMAIL"
+                    android:background="@color/imgLineColor" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/STATUS_CITY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/STATUS_CITY_IMG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/circle_tick_color"/>
+
+                    <ImageView
+                        android:id="@+id/STATUS_CITY_LINE"
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center|top"
+                        android:background="@color/imgLineColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/CITY_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/STATUS_CITY"
+                    android:text="City"/>
+
+                <Spinner
+                    android:id="@+id/CITY_SPINNER"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/CITY_TXT"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/STATUS_CITY" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/CITY_SPINNER"
+                    android:layout_toRightOf="@+id/STATUS_CITY"
+                    android:background="@color/imgLineColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/STATUS_LOANTYPE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/STATUS_LOANTYPE_IMG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/circle_tick_color" />
+
+                    <ImageView
+                        android:id="@+id/STATUS_LOANTYPE_LINE"
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center|top"
+                        android:background="@color/imgLineColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/LOANTYPE_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/STATUS_LOANTYPE"
+                    android:text="Loan Type" />
+
+                <Spinner
+                    android:id="@+id/LOANTYPE_SPINNER"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/LOANTYPE_TXT"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/STATUS_LOANTYPE" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/LOANTYPE_SPINNER"
+                    android:layout_toRightOf="@+id/STATUS_LOANTYPE"
+                    android:background="@color/imgLineColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/PROPVERF_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/STATUS_PROPVERF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/STATUS_PROPVERF_IMG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/circle_tick_color" />
+
+                    <ImageView
+                        android:id="@+id/STATUS_PROPVERF_LINE"
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center|top"
+                        android:background="@color/imgLineColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/PROPVERF_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/STATUS_PROPVERF"
+                    android:text="Property Verified?" />
+
+                <RadioGroup
+                    android:id="@+id/PROPVERF_SPINNER"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/PROPVERF_TXT"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/STATUS_PROPVERF" >
+
+                    <RadioButton
+                        android:id="@+id/RADIO_YES"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/RADIO_NO"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="No" />
+
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/PROPVERF_SPINNER"
+                    android:layout_toRightOf="@+id/STATUS_PROPVERF"
+                    android:background="@color/imgLineColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/BUILDER_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/STATUS_BUILDER"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/STATUS_IMG_BUILDER"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/circle_tick_color" />
+
+                    <ImageView
+                        android:id="@+id/STATUS_LINE_BUILDER"
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center|top"
+                        android:background="@color/imgLineColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/BUILDER_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/STATUS_BUILDER"
+                    android:text="Builder Name" />
+
+                <Spinner
+                    android:id="@+id/BUILDER_SPINNER"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/BUILDER_TXT"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/STATUS_BUILDER" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/BUILDER_SPINNER"
+                    android:layout_toRightOf="@+id/STATUS_BUILDER"
+                    android:background="@color/imgLineColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/PROJECT_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/STATUS_PROJECT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/STATUS_PROJECT_IMG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/circle_tick_color" />
+
+                    <ImageView
+                        android:id="@+id/STATUS_PROJECT_LINE"
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center|top"
+                        android:background="@color/imgLineColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/PROJECT_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/STATUS_PROJECT"
+                    android:text="Project Name" />
+
+                <Spinner
+                    android:id="@+id/PROJECT_SPINNER"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/PROJECT_TXT"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/STATUS_PROJECT" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/PROJECT_SPINNER"
+                    android:layout_toRightOf="@+id/STATUS_PROJECT"
+                    android:background="@color/imgLineColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/STATUS_LOANAMT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/STATUS_LOANAMT_IMG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/circle_tick_color" />
+
+                    <ImageView
+                        android:id="@+id/STATUS_LOANAMT_LINE"
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center|top"
+                        android:background="@color/imgLineColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/LOANAMT_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/STATUS_LOANAMT"
+                    android:text="Loan Amount" />
+
+                <EditText
+                    android:id="@+id/LOANAMT_DESCRIPTION_EDIT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/LOANAMT_TXT"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/STATUS_LOANAMT"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter Loan Amount"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/LOANAMT_DESCRIPTION_EDIT"
+                    android:layout_toRightOf="@+id/STATUS_LOANAMT"
+                    android:background="@color/imgLineColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/STATUS_NETSALARY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/STATUS_NETSALARY_IMG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/circle_tick_color" />
+
+                    <ImageView
+                        android:id="@+id/STATUS_NETSALARY_LINE"
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center|top"
+                        android:background="@color/imgLineColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/NETSALARY_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/STATUS_NETSALARY"
+                    android:text="Net Salary" />
+
+                <EditText
+                    android:id="@+id/NETSALARY_DESCRIPTION_EDIT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/NETSALARY_TXT"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/STATUS_NETSALARY"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter Net Salary"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/NETSALARY_DESCRIPTION_EDIT"
+                    android:layout_toRightOf="@+id/STATUS_NETSALARY"
+                    android:background="@color/imgLineColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/STATUS_LOANEMI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/STATUS_LOANEMI_IMG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/circle_tick_color" />
+
+                    <ImageView
+                        android:id="@+id/STATUS_LOANEMI_LINE"
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center|top"
+                        android:background="@color/imgLineColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/LOANEMI_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/STATUS_LOANEMI"
+                    android:text="Existing Loan EMI" />
+
+                <EditText
+                    android:id="@+id/LOANEMI_DESCRIPTION_EDIT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/LOANEMI_TXT"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/STATUS_LOANEMI"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter EMI amount"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/LOANEMI_DESCRIPTION_EDIT"
+                    android:layout_toRightOf="@+id/STATUS_LOANEMI"
+                    android:background="@color/imgLineColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/STATUS_COMPANYNAME"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/STATUS_COMPANYNAME_IMG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/circle_tick_color" />
+
+                    <ImageView
+                        android:id="@+id/STATUS_COMPANYNAME_LINE"
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center|top"
+                        android:background="@color/imgLineColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/COMPANYNAME_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/STATUS_COMPANYNAME"
+                    android:text="Company Name" />
+
+                <EditText
+                    android:id="@+id/COMPANYNAME_DESCRIPTION_EDIT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/COMPANYNAME_TXT"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/STATUS_COMPANYNAME"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter Name"
+                    android:inputType="text|textNoSuggestions"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/COMPANYNAME_DESCRIPTION_EDIT"
+                    android:layout_toRightOf="@+id/STATUS_COMPANYNAME"
+                    android:background="@color/imgLineColor" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/STATUS_LEADSOURCE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/STATUS_LEADSOURCE_IMG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/circle_tick_color" />
+
+                    <ImageView
+                        android:id="@+id/STATUS_LEADSOURCE_LINE"
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center|top"
+                        android:background="@color/imgLineColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/LEADSOURCE_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/STATUS_LEADSOURCE"
+                    android:text="Lead Source" />
+
+                <Spinner
+                    android:id="@+id/LEADSOURCE_SPINNER"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/LEADSOURCE_TXT"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/STATUS_LEADSOURCE" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/LEADSOURCE_SPINNER"
+                    android:layout_toRightOf="@+id/STATUS_LEADSOURCE"
+                    android:background="@color/imgLineColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/REFERRAL_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/STATUS_REFERRAL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/STATUS_REFERRAL_IMG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/circle_tick_color" />
+
+                    <ImageView
+                        android:id="@+id/STATUS_REFERRAL_LINE"
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center|top"
+                        android:background="@color/imgLineColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/REFERRAL_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/STATUS_REFERRAL"
+                    android:text="Referrals" />
+
+                <Spinner
+                    android:id="@+id/REFERRAL_SPINNER"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/REFERRAL_TXT"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/STATUS_REFERRAL" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_below="@+id/REFERRAL_SPINNER"
+                    android:layout_toRightOf="@+id/STATUS_REFERRAL"
+                    android:background="@color/imgLineColor" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/SUBMIT_CANCEL_LAY"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:elevation="2dp">
+
+        <TextView
+            android:id="@+id/SUBMIT_BTN_TXT"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Submit"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@color/buttonBg"/>
+        <TextView
+            android:id="@+id/CANCEL_BTN_TXT"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@color/imgLineColor"/>
+    </LinearLayout>
+
+</RelativeLayout>

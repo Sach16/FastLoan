@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/exp_child_img"
+                android:src="@drawable/call_color" />
+
+            <TextView
+                android:id="@+id/CONTACT_NO"
+                style="@style/exp_child" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/exp_child_img"
+                android:src="@drawable/file" />
+
+            <TextView
+                android:id="@+id/TYPE_OF_LOAN"
+                style="@style/exp_child" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/exp_child_img"
+                android:src="@drawable/date_color" />
+
+            <TextView
+                android:id="@+id/CUST_DATE"
+                style="@style/exp_child" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/exp_child_img"
+                android:src="@drawable/manager" />
+
+            <TextView
+                android:id="@+id/CUST_ENGG"
+                style="@style/exp_child" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/exp_child_img"
+                android:src="@drawable/rupee" />
+
+            <TextView
+                android:id="@+id/LOAN_AMT"
+                style="@style/exp_child" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/exp_child_img"
+                android:src="@drawable/icon_man" />
+
+            <TextView
+                android:id="@+id/AGENT_NAME"
+                style="@style/exp_child" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/exp_child_img"
+                android:src="@drawable/location_color" />
+
+            <TextView
+                android:id="@+id/LOCATION"
+                style="@style/exp_child" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/exp_child_img"
+                android:src="@drawable/route" />
+
+            <TextView
+                android:id="@+id/STATUS_NEW_OLD"
+                style="@style/exp_child" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

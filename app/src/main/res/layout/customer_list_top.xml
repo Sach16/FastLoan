@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/rel_lay_bg4">
+
+    <TextView
+        android:id="@+id/LEAD_CUST_NAME"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:gravity="center"
+        android:text="Full Name"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/GO_ARROW"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow_icon" />
+
+</RelativeLayout>

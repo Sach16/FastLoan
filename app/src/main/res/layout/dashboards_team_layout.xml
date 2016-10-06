@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <ScrollView
+        android:id="@+id/SCROLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/VIEW_PRO_DASH_TEAM">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <include
+                android:id="@+id/DASH_TEAM_TOP"
+                layout="@layout/dashboard_top" />
+
+            <include
+                android:id="@+id/customer_list_bottom"
+                layout="@layout/dashboard_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DASH_TEAM_TOP" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/VIEW_PRO_DASH_TEAM"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/VIEW_PROFILE_VIEW_TXT"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/buttonBg"
+            android:gravity="center"
+            android:text="View Profile"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

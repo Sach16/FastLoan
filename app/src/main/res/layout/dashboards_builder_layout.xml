@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <ScrollView
+        android:id="@+id/SCROLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <include
+                android:id="@+id/DASH_TEAM_TOP"
+                layout="@layout/dashboard_top" />
+
+            <include
+                android:id="@+id/customer_list_bottom"
+                layout="@layout/dashboard_builder_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DASH_TEAM_TOP" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

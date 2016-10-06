@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LIST_HEADER"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/GUID_TXT"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight=".5"
+        android:background="@color/cardColor">
+
+        <TextView
+            android:id="@+id/MEMBER_NAME"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/PRO_PIC"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center|left"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:text="Full Name" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/PRESENT_NO"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_weight="0.25"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/ABSENT_NO"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_weight="0.25"
+        android:background="@color/cardColor"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="14sp" />
+
+</LinearLayout>

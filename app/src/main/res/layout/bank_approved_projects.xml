@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/BANK_TITLE_BAR"
+        layout="@layout/titlebar" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/TAB_LAYOUT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BANK_TITLE_BAR"
+        android:background="@android:color/white"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:textSize="18sp"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabIndicatorHeight="2dp"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabTextColor="@android:color/black" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/PAGER"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/TAB_LAYOUT"
+        android:background="@android:color/white" />
+
+</RelativeLayout>

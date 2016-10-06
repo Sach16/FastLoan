@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blockBg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="Full Name"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@android:drawable/ic_menu_crop" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/PRODUCT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="Product"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.35"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:text="Home Loan"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/PRODUCT"
+            android:background="@color/corner_bg"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/LOAN_AMT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="loan Amount"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.35"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:text="\u20B9  12200000"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/LOAN_AMT"
+            android:background="@color/corner_bg"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/APPROVED_BY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="Approved By"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.35"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:text="HDFC Bank"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/APPROVED_BY"
+            android:background="@color/corner_bg"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/RATE_OF_INT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="Rate of Interest"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.35"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:text="10%"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/RATE_OF_INT"
+            android:background="@color/corner_bg"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/PAYMENT_TYPE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="Payment Type"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.35"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:text="Part Pay Facility"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/PAYMENT_TYPE"
+            android:background="@color/corner_bg"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/PAYMENT_MONTH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="Product"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.35"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:text="Payment (per month)"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/PAYMENT_MONTH"
+            android:background="@color/corner_bg"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/PAYMENT_TYPE"
+        android:background="@color/corner_bg"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_weight="1"
+            android:background="@color/buttonBg"
+            android:drawableTop="@android:drawable/ic_menu_crop"
+            android:gravity="center"
+            android:text="Property \n Details"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/blockBg"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_weight="1"
+            android:background="@color/buttonBg"
+            android:drawableTop="@android:drawable/ic_menu_crop"
+            android:gravity="center"
+            android:text="Doc CheckList and Queries"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/blockBg"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_weight="1"
+            android:background="@color/buttonBg"
+            android:drawableTop="@android:drawable/ic_menu_crop"
+            android:gravity="center"
+            android:text="Loan Desk Remarks"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/PAYMENT_TYPE"
+        android:background="@color/corner_bg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/blockBg">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/greyTextColor"
+                    android:text="Lead added by"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:text="Full Name"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/black"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/greyTextColor"
+                    android:text="Date"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:text="dd / mm / yyyy"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textColor="@color/greyTextColor"
+                    android:text="Lead Stage"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:text="Sanction"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/black"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/greyTextColor"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="Time"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:text="00:00 nm"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

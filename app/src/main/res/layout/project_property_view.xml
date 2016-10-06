@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/VIEW_PROJECT_PROPERTY"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardColor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Name"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/NAME_BUILDER"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Full Name"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/NAME_BUILDER"
+        android:background="@color/corner_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Project Name"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/PROJECT_NAME"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Full Name"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/PROJECT_NAME"
+        android:background="@color/corner_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Project Location"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/LOCATION"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Location"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/LOCATION"
+        android:background="@color/corner_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="City"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/CITY"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="City"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/CITY"
+        android:background="@color/corner_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Bank"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/BANK1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Bank Name"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/BANK1"
+        android:background="@color/corner_bg" />
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Bank"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/BANK2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="ABC DSA"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/BANK2"
+            android:background="@color/corner_bg" />
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Assign Team Member"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/ASSIGN_TEAM_MEMBERS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Member Name"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/ASSIGN_TEAM_MEMBERS"
+        android:background="@color/corner_bg" />
+
+    <LinearLayout
+        android:id="@+id/POSESSION_DATE_LAY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Posession Date"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/POSESSION_DATE_TXT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="DD-MM-YYYY"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/BANK_APPROVAL_DATE"
+        android:background="@color/corner_bg" />
+
+    <LinearLayout
+        android:id="@+id/BANK_APPROVAL_DATE_LAY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Bank Approved Date"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/BANK_APPROVAL_DATE"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="-"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/BANK_APPROVAL_DATE"
+        android:background="@color/corner_bg" />
+
+    <LinearLayout
+        android:id="@+id/LSR_INITIATION_LAY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="LSR initiation date"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/LSR_INITIATION"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="-"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/LSR_INITIATION_LAY"
+        android:background="@color/corner_bg" />
+
+    <LinearLayout
+        android:id="@+id/LSR_COMPLETION_LAY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="LSR complete date"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/LSR_COMPLETION"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="-"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/LSR_COMPLETION"
+        android:background="@color/corner_bg" />
+
+</LinearLayout>

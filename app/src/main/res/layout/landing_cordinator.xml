@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/main_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <LinearLayout
+            android:id="@+id/START_TXT_LAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/HAVE_GOOD_DAY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/LANDING_FULNAME"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/HAVE_GOOD_DAY"
+                    android:gravity="center"
+                    android:text="Full Name"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/LANDING_DATE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:drawableLeft="@drawable/calendar_blk"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="Wed, 23rd March 2016"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/LANDING_TIME"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/LANDING_DATE"
+                    android:drawableLeft="@drawable/clock_blk"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="10:30:22"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/rel_lay_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:text="Track Me"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/toggle_selector"
+                    android:textOff=""
+                    android:textOn="" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blockBlue"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/LEAD_LAY"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/LEAD_COUNT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@drawable/leads_bg"
+                        android:drawablePadding="10dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/calendarTitle"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/LEAD_COUNT"
+                        android:gravity="center"
+                        android:text="Leads"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@android:color/black" />
+
+                <RelativeLayout
+                    android:id="@+id/DASHBOARD_LAY"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/DASHBOARD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@drawable/dasboard_bg"
+                        android:drawablePadding="10dp"
+                        android:gravity="center"
+                        android:text="Dashboard"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/CUSTOMER_LAY"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/CUSTOMERS_COUNT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@drawable/customer_bg"
+                        android:drawablePadding="10dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/calendarTitle"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/CUSTOMERS_COUNT"
+                        android:gravity="center"
+                        android:text="Customers"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@android:color/black" />
+
+                <RelativeLayout
+                    android:id="@+id/PRODUCTS_LAY"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/PRODUCT_DETAILS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@drawable/product_details_bg"
+                        android:drawablePadding="10dp"
+                        android:gravity="center"
+                        android:text="Product Details"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/corner_bg" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/sliderbg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/LANDING_ATTEN_DAY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:text="Attendance For 21st Jan"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/HISTORY_BTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_bg"
+                android:gravity="center"
+                android:text="View History"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RECYC_LANDING"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</android.support.design.widget.CoordinatorLayout>

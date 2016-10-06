@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="13dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TEXT_PHONE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Phone" />
+
+        <RelativeLayout
+            android:id="@+id/EDIT_PHONE_LAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TEXT_PHONE"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/EDIT_PHONE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:hint="Enter Phone"
+                android:inputType="number"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/EDIT_PHONE_LAY"
+            android:background="@color/imgLineColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TEXT_EMAIL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Email ID" />
+
+        <RelativeLayout
+            android:id="@+id/EDIT_EMAIL_LAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TEXT_EMAIL"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/EDIT_EMAIL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:hint="Enter Email"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/EDIT_EMAIL_LAY"
+            android:background="@color/imgLineColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/EDIT_SELECT_CITY_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="City" />
+
+        <Spinner
+            android:id="@+id/EDIT_SELECT_CITY_SPIN"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/EDIT_SELECT_CITY_TXT" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/EDIT_SELECT_CITY_SPIN"
+            android:background="@color/imgLineColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/EDIT_SELECT_RECIDENCY_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Residential Status" />
+
+        <Spinner
+            android:id="@+id/EDIT_SELECT_RECIDENCY_SPIN"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/EDIT_SELECT_RECIDENCY_TXT" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/EDIT_SELECT_RECIDENCY_SPIN"
+            android:background="@color/imgLineColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/EDIT_SELECT_PROFESSION_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Profession" />
+
+        <Spinner
+            android:id="@+id/EDIT_SELECT_PROFESSION_SPIN"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/EDIT_SELECT_PROFESSION_TXT" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/EDIT_SELECT_PROFESSION_SPIN"
+            android:background="@color/imgLineColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TEXT_DOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Date Of Birth" />
+
+        <RelativeLayout
+            android:id="@+id/EDIT_DOB_LAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TEXT_DOB"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/EDIT_DOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:hint="Enter Date of Birth"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/EDIT_DOB_LAY"
+            android:background="@color/imgLineColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TEXT_AGE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Age" />
+
+        <RelativeLayout
+            android:id="@+id/EDIT_AGE_LAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TEXT_AGE"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/EDIT_AGE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:hint="Enter Age"
+                android:maxLines="1"
+                android:maxLength="2"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/EDIT_AGE_LAY"
+            android:background="@color/imgLineColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TEXT_EDU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Education" />
+
+        <RelativeLayout
+            android:id="@+id/EDIT_EDU_LAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TEXT_EDU"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/EDIT_EDU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:hint="Enter Education"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/EDIT_EDU_LAY"
+            android:background="@color/imgLineColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/EDIT_MARITAL_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Marital Status" />
+
+        <Spinner
+            android:id="@+id/EDIT_MARITAL_SPIN"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/EDIT_MARITAL_TXT" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/EDIT_MARITAL_SPIN"
+            android:background="@color/imgLineColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TEXT_COMPANY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Company" />
+
+        <RelativeLayout
+            android:id="@+id/EDIT_COMPANY_LAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TEXT_COMPANY"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/EDIT_COMPANY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:hint="Enter Company Name"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/EDIT_COMPANY_LAY"
+            android:background="@color/imgLineColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TEXT_SALARY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Net Salary Per Month" />
+
+        <RelativeLayout
+            android:id="@+id/EDIT_SALARY_LAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TEXT_SALARY"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/RUPEES_SYMBOL"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/black"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="\u20B9"/>
+
+            <EditText
+                android:id="@+id/EDIT_SALARY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/RUPEES_SYMBOL"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:hint="Enter Salary"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/EDIT_SALARY_LAY"
+            android:background="@color/imgLineColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TEXT_PAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="PAN NO." />
+
+        <RelativeLayout
+            android:id="@+id/EDIT_PAN_LAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TEXT_PAN"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/EDIT_PAN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:hint="Enter Pan No."
+                android:maxLines="1"
+                android:inputType="textCapCharacters"
+                android:digits="@string/panAlphaNumeric"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/EDIT_PAN_LAY"
+            android:background="@color/imgLineColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TEXT_ACC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Salary A/c Bank" />
+
+        <RelativeLayout
+            android:id="@+id/EDIT_ACC_LAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TEXT_ACC"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/EDIT_ACC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:hint="Enter Bank Name"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/EDIT_ACC_LAY"
+            android:background="@color/imgLineColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TEXT_SKYPE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Skype ID" />
+
+        <RelativeLayout
+            android:id="@+id/EDIT_SKYPE_LAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TEXT_SKYPE"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/EDIT_SKYPE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:hint="Enter Skype Id"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/EDIT_SKYPE_LAY"
+            android:background="@color/imgLineColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TEXT_FACET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="FaceTime ID" />
+
+        <RelativeLayout
+            android:id="@+id/EDIT_FACET_LAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TEXT_FACET"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/EDIT_FACET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:hint="Enter FaceTime Id"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/EDIT_FACET_LAY"
+            android:background="@color/imgLineColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/RIGHT_CONTACT_TIME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Right time to contact (IST)" />
+
+        <RelativeLayout
+            android:id="@+id/RIGHT_CONTACT_TIME_LAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RIGHT_CONTACT_TIME"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/RIGHT_CONTACT_TIME_TXT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="Select Time"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/RIGHT_CONTACT_TIME_IMG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:src="@drawable/clock" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/RIGHT_CONTACT_TIME_LAY"
+            android:background="@color/imgLineColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TEXT_CIBIL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="CIBIL score" />
+
+        <RelativeLayout
+            android:id="@+id/EDIT_CIBIL_LAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TEXT_CIBIL"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/EDIT_CIBIL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/EDIT_CIBIL_LAY"
+            android:background="@color/imgLineColor"
+            android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/EDIT_SELECT_CIBIL_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="CIBIL Status" />
+
+        <Spinner
+            android:id="@+id/EDIT_SELECT_CIBIL_SPIN"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/EDIT_SELECT_CIBIL_TXT" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/EDIT_SELECT_CIBIL_SPIN"
+            android:background="@color/imgLineColor" />
+    </RelativeLayout>
+</LinearLayout>

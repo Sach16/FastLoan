@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cardColor">
+
+    <com.whatsloan.dsa.customviews.UserCircularImageView
+        android:id="@+id/PRO_PIC"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:alpha="0.6"
+        android:background="@color/cardColor"
+        android:src="@drawable/profile_placeholder" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PRO_PIC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/CUST_NAME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Full Name"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/LOCATION"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CUST_NAME"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/location_color"
+            android:drawablePadding="2dp"
+            android:gravity="center"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/EDIT_CUSTOMER_IMG"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/CUST_NAME"
+            android:background="@drawable/call_button_bg"
+            android:padding="7dp"
+            android:src="@drawable/edit" />
+
+    </RelativeLayout>
+</RelativeLayout>

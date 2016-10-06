@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cardColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="13dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/EDIT_SELECT_BUILDER_TXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Select Builder" />
+
+            <Spinner
+                android:id="@+id/EDIT_SELECT_BUILDER_SPIN"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/EDIT_SELECT_BUILDER_TXT" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/EDIT_SELECT_BUILDER_SPIN"
+                android:background="@color/imgLineColor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/EDIT_PROJECT_NAME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Enter Project Name" />
+
+            <RelativeLayout
+                android:id="@+id/EDIT_PROJECT_NAME_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EDIT_PROJECT_NAME"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <EditText
+                    android:id="@+id/EDIT_PROJECT_NAME_EDIT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter Project Name"
+                    android:maxLines="2"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/EDIT_PROJECT_NAME_LAY"
+                android:background="@color/imgLineColor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/EDIT_LOCATION_NAME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Enter Project Location" />
+
+            <RelativeLayout
+                android:id="@+id/EDIT_LOCATION_NAME_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EDIT_LOCATION_NAME"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <EditText
+                    android:id="@+id/EDIT_LOCATION_NAME_EDIT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter Project Location"
+                    android:maxLines="2"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/EDIT_LOCATION_NAME_LAY"
+                android:background="@color/imgLineColor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/EDIT_SELECT_CITY_TXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Select City" />
+
+            <Spinner
+                android:id="@+id/EDIT_SELECT_CITY_SPIN"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/EDIT_SELECT_CITY_TXT" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/EDIT_SELECT_CITY_SPIN"
+                android:background="@color/imgLineColor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/EDIT_SELECT_BANK_TXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Select Bank" />
+
+            <Spinner
+                android:id="@+id/EDIT_SELECT_BANK_SPINNER"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/EDIT_SELECT_BANK_TXT" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/EDIT_SELECT_BANK_SPINNER"
+                android:background="@color/imgLineColor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/EDIT_ASSIGN_TEAM_TXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Assign Team Member" />
+
+            <Spinner
+                android:id="@+id/EDIT_ASSIGN_TEAM_SPIN"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/EDIT_ASSIGN_TEAM_TXT" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/EDIT_ASSIGN_TEAM_SPIN"
+                android:background="@color/imgLineColor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/EDIT_BANK_APPROVAL_DATE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/STATUS_STARTENDD"
+                android:text="Bank Approval Date" />
+
+            <RelativeLayout
+                android:id="@+id/EDIT_BANK_APPROVAL_DATE_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EDIT_BANK_APPROVAL_DATE"
+                android:layout_toRightOf="@+id/STATUS_STARTENDD"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/EDIT_BANK_APPROVAL_DATE_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="Select a Date"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/EDIT_BANK_APPROVAL_DATE_IMG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:src="@drawable/date_color"
+                    android:text="(0/162)" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/EDIT_BANK_APPROVAL_DATE_LAY"
+                android:layout_toRightOf="@+id/STATUS_STARTENDD"
+                android:background="@color/imgLineColor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/EDIT_LSR_INITIATION"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/STATUS_STARTENDT"
+                android:text="LSR Initiation and Completion Date" />
+
+            <RelativeLayout
+                android:id="@+id/EDIT_LSR_INITIATION_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EDIT_LSR_INITIATION"
+                android:layout_toRightOf="@+id/STATUS_STARTENDT"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/EDIT_LSR_INITIATION_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="Select a Date"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/EDIT_LSR_INITIATION_IMG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:src="@drawable/date_color"
+                    android:text="(0/162)" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/EDIT_LSR_INITIATION_LAY"
+                android:layout_toRightOf="@+id/STATUS_STARTENDT"
+                android:background="@color/imgLineColor" />
+
+        </RelativeLayout>
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/BANK_APPROVAL_DATE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/STATUS_STARTENDT"
+                android:text="Bank Approval Date" />
+
+            <RelativeLayout
+                android:id="@+id/BANK_APPROVAL_DATE_LAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/BANK_APPROVAL_DATE"
+                android:layout_toRightOf="@+id/STATUS_STARTENDT"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/BANK_APPROVAL_DATE_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="Select a Date"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/BANK_APPROVAL_DATE_IMG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:src="@drawable/date_color"
+                    android:text="(0/162)" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/BANK_APPROVAL_DATE_LAY"
+                android:layout_toRightOf="@+id/STATUS_STARTENDT"
+                android:background="@color/imgLineColor" />
+
+        </RelativeLayout>-->
+
+    </LinearLayout>
+
+</RelativeLayout>
